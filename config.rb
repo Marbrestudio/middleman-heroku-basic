@@ -1,44 +1,46 @@
-$:.push File.expand_path('../source', __FILE__)
+# Activate and configure extensions
+# https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-require 'slim'
-
-activate :automatic_image_sizes
-activate :directory_indexes
-activate :protect_emails
-
-activate :sprockets
-
-if defined? RailsAssets
-  RailsAssets.load_paths.each do |path|
-    sprockets.append_path path
-  end
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
 end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+# Layouts
+# https://middlemanapp.com/basics/layouts/
 
+# Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# With alternative layout
+# page '/path/to/file.html', layout: 'other_layout'
 
-# Some helpers for good measure
-helpers do
-  # Gets partials from the _partials directory
-  def _partial(partial_filename)
-    partial "_partials/#{partial_filename}"
-  end
-end
+# Proxy pages
+# https://middlemanapp.com/advanced/dynamic-pages/
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+# proxy(
+#   '/this-page-has-no-template.html',
+#   '/template-file.html',
+#   locals: {
+#     which_fake_page: 'Rendering a fake page with a local variable'
+#   },
+# )
+
+# Helpers
+# Methods defined in the helpers block are available in templates
+# https://middlemanapp.com/basics/helper-methods/
+
+# helpers do
+#   def some_helper
+#     'Helping'
+#   end
+# end
 
 # Build-specific configuration
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :asset_hash
-end
+# https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+
+# configure :build do
+#   activate :minify_css
+#   activate :minify_javascript
+# end
