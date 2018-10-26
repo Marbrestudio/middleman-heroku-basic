@@ -2,22 +2,182 @@
 title: Welcome to Middleman
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
-  <title id="middleman-logo__title">Middleman</title>
-  <path class="middleman-logo__top-left-bar" fill-opacity=".45" d="M0 40L200 0v30L0 60z"/>
-  <path class="middleman-logo__top-right-bar" fill="#fff" d="M200 0l200 40v20L200 30z"/>
-  <path class="middleman-logo__left-m" fill-opacity=".45" d="M0 78v184l45 5V152l45 83 47-83v129l53 7V52l-57 8-43 83-43-70z"/>
-  <path class="middleman-logo__right-m" fill="#fff" d="M400 78v184l-45 5V152l-45 83-47-83v129l-53 7V52l57 8 43 83 43-70z"/>
-  <path class="middleman-logo__bottom-left-bar" fill-opacity=".45" d="M0 300l200 40v-30L0 280z"/>
-  <path class="middleman-logo__bottom-right-bar" fill="#fff" d="M200 340l200-40v-20l-200 30z"/>
-</svg>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hola Mundo</title>
 
-<h1>
-  ESTO ES UNA PRUEBA DE MARI PARA VER SI FUNCIONA!!!!
-</h1>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
 
-<%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %>
+    <div class="container">
+      <div class="navegacion">
+      <h2>Navegacion</h2>
+      <nav class="menu">
+          <a href="#noticias">Noticias</a>
+          <a href="#galeria">Galería</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+      </nav>
+    </div> <!--.navegacion-->
+
+      <div class="background london">
+          <div class="contenido">
+            <h1>Vísita Londres</h1>
+            <p>Nam accumsan aliquet purus in aliquam. Fusce gravida sapien eu leo efficitur, eu tempus ante volutpat. Integer varius odio eget leo fringilla, in interdum odio tincidunt. Sed ullamcorper pretium arcu vitae facilisis.</p>
+          </div> <!--.contenido-->
+      </div> <!--.london-->
+
+
+
+    <div id="contenido-principal">
+      <h2 class="titulo">Noticias</h2>
+      <div class="noticias" id="noticias">
+          <div class="noticia">
+              <img src="http://placehold.it/200x200">
+              <h3>Titulo de Noticia</h3>
+              <p>Nam accumsan aliquet purus in aliquam. Fusce gravida sapien eu leo efficitur, eu tempus ante volutpat. Integer varius odio eget leo fringilla, in interdum odio tincidunt. Sed ullamcorper pretium arcu vitae facilisis. Aliquam ac velit at urna pretium pellentesque id et orci. Fusce sed augue purus. Nullam viverra nisi nisl, eu semper ipsum sollicitudin id.</p>
+              <a href="#" class="btn">Ver Artículo</a>
+          </div>
+          <div class="noticia">
+              <img src="http://placehold.it/200x200">
+              <h3>Titulo de Noticia</h3>
+              <p>Nam accumsan aliquet purus in aliquam. Fusce gravida sapien eu leo efficitur, eu tempus ante volutpat. Integer varius odio eget leo fringilla, in interdum odio tincidunt. Sed ullamcorper pretium arcu vitae facilisis. Aliquam ac velit at urna pretium pellentesque id et orci. Fusce sed augue purus. Nullam viverra nisi nisl, eu semper ipsum sollicitudin id.</p>
+              <a href="#" class="btn">Ver Artículo</a>
+          </div>
+          <div class="noticia">
+              <img src="http://placehold.it/200x200">
+              <h3>Titulo de Noticia</h3>
+              <p>Nam accumsan aliquet purus in aliquam. Fusce gravida sapien eu leo efficitur, eu tempus ante volutpat. Integer varius odio eget leo fringilla, in interdum odio tincidunt. Sed ullamcorper pretium arcu vitae facilisis. Aliquam ac velit at urna pretium pellentesque id et orci. Fusce sed augue purus. Nullam viverra nisi nisl, eu semper ipsum sollicitudin id.</p>
+              <a href="#" class="btn">Ver Artículo</a>
+          </div>
+      </div> <!--.media-->
+
+  </div><!--#contenido-principal -->
+
+
+  <aside class="sidebar">
+    <div class="horario">
+      <table>
+        <caption>Museos en Londres</caption>
+        <thead>
+           <tr>
+              <th>Museo</th>
+              <th>Precio</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>British Museum</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Design Museum</td>
+              <td>£13</td>
+            </tr>
+            <tr>
+              <td>Imperial War Museum</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>London Transport Museum</td>
+              <td>£17</td>
+            </tr>
+            <tr>
+              <td>Museum of London</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Natural History Museum</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Royal Museums Greenwich</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Science Museum</td>
+              <td>Gratis</td>
+            </tr>
+            <tr>
+              <td>Victoria and Albert Museum</td>
+              <td>Gratis</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+
+
+  <div class="background estacion">
+      <div class="contenido">
+        <h1>La mejor ciudad para visitar</h1>
+      </div> <!--.contenido-->
+  </div> <!--.london-->
+
+  <div id="galeria" class="galeria">
+    <h2>Galería</h2>
+
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+    <li class="imagen">
+        <img src="http://placehold.it/300x300">
+    </li>
+  </div>
+
+  <div id="servicios" class="servicios">
+    <h2>Servicios</h2>
+      <ul class="servicios-lista">
+          <li>
+            <h3>Servicio 1</h3>
+                <p>Nam vitae cursus massa. Nunc ut arcu a mi convallis feugiat. Sed ante sem, sollicitudin sed porta et, molestie in turpis. Nulla lacinia lacus nec ligula feugiat eget sagittis metus lobortis.</p>
+                <a class="btn-servicio1" href="#">Leer más</a>
+          </li>
+          <li>
+            <h3>Servicio 2</h3>
+                <p>Nam vitae cursus massa. Nunc ut arcu a mi convallis feugiat. Sed ante sem, sollicitudin sed porta et, molestie in turpis. Nulla lacinia lacus nec ligula feugiat eget sagittis metus lobortis.</p>
+                <a class="btn-servicio2" href="#">Leer más</a>
+          </li>
+          <li>
+            <h3>Servicio 3</h3>
+                <p>Nam vitae cursus massa. Nunc ut arcu a mi convallis feugiat. Sed ante sem, sollicitudin sed porta et, molestie in turpis. Nulla lacinia lacus nec ligula feugiat eget sagittis metus lobortis.</p>
+                <a class="btn-servicio3" href="#">Leer más</a>
+          </li>
+          <li>
+            <h3>Servicio 4</h3>
+                <p>Nam vitae cursus massa. Nunc ut arcu a mi convallis feugiat. Sed ante sem, sollicitudin sed porta et, molestie in turpis. Nulla lacinia lacus nec ligula feugiat eget sagittis metus lobortis.</p>
+                <a class="btn-servicio4" href="#">Leer más</a>
+          </li>
+      </ul>
+  </div> <!--.servicios-->
+
+    </div> <!--.container -->
+  </body>
+</html>

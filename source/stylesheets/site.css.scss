@@ -1,24 +1,27 @@
+
+$blanco: #EEE8D6;
+$AzulOscuro: #101068;
+$amarillo: 	#FFBA00;
+$azul: #0076A3;
+$verde: #548c27;
+$rojo: #fe2f28;
+$morado:#6D76CD;
+$negro: #000000;
+
+$color-fondo: $azul;
+$color-texto: $blanco;
+$color-titulos: $amarillo;
+$fuente-titulos: 'Open Sans', sans-serif;
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+	background: $color-fondo;
+	margin:0;
+	padding:0;
+	font-size:1.4rem;
+	color: $color-texto;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+h1,h2,h3,h4 {
+	color: $color-titulos;
+	font-family: $fuente-titulos;
 }
